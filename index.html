@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CCMRU</title>
   <link rel="stylesheet" href="style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="images/logo.jpg" image/x-icon">
 </head>
 
 <body>
@@ -21,7 +19,7 @@
       <nav>
         <ul id="menuList">
           <li><a href="#">HOME</a></li>
-          <li><a href="#about-location">ABOUT</a></li>
+          <li><a href="#about-loc">ABOUT</a></li>
           <li><a href="#team-location">TEAM</a></li>
         </ul>
       </nav>
@@ -38,8 +36,7 @@
     </div>
 
   </div>
-  <div id=" about-location">
-  </div>
+  <div id="about-loc"></div>
   <div id="about-heading">
     <h2>ABOUT</h2>
 
@@ -85,7 +82,8 @@
         <div class="card-body">
           <h5 class="card-title">Dr. Rashmeet Toor</h5>
           <p class="card-text">FACULTY COORDINATOR</p>
-          <a href="https://www.linkedin.com/in/dr-rashmeet-toor-92474087/" target="_blank" class="btn"><img src="images/linkedin icon.png"></a>
+          <a href="https://www.linkedin.com/in/dr-rashmeet-toor-92474087/" target="_blank" class="btn"><img
+              src="images/linkedin icon.png"></a>
           <a href="#" class="btn"><img src="images/mail icon.png"></a>
         </div>
       </div>
@@ -182,65 +180,28 @@
     </div>
   </div>
   <div class="footer">
+    <a href="https://www.linkedin.com/company/coding-club-mru/" target="_blank">
+      <img src="images/linkedin icon.png" alt="LinkedIn">
+    </a>
     <h6 id="footer-text"> CODING CLUB MRU - All Rights Reserved</h6>
   </div>
 
   <script>
+  
     var menuList = document.getElementById("menuList");
     menuList.style.maxHeight = "0px";
+
     function togglemenu() {
+      console.log("Toggle menu function called");
       if (menuList.style.maxHeight == "0px") {
         menuList.style.maxHeight = "130px";
       } else {
         menuList.style.maxHeight = "0px";
       }
     }
+  
   </script>
 </body>
 
-</html> 
- 
-<!-- <!DOCTYPE html>
-<html lang="en">
+</html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="navbar">
-      <img src="images/mru logo.jpg" class="logo">
-      <nav>
-        <ul id="menuList">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about-location">ABOUT</a></li>
-          <li><a href="#team-location">TEAM</a></li>
-        </ul>
-      </nav>
-      <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
-    </div>
-
-    <div class="row">
-      <img id="club_logo" src="images/logo.jpg">
-      <h3 id="ccmru-title">CODING CLUB</h3>
-      <p id="tagline">TECHNOLOGY || INNOVATION || PASSION</p>
-    </div>
-  </div>
-  <script>
-    var menuList = document.getElementById("menuList");
-    menuList.style.maxHeight = "0px";
-    function togglemenu() {
-      if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "130px";
-      } else {
-        menuList.style.maxHeight = "0px";
-      }
-    }
-  </script>
-</body>
-
-</html> -->
