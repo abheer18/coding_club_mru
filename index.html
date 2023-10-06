@@ -12,16 +12,17 @@
 
 <body>
   <div class="bg-img">
-    <nav>
-      <a class="navbar-brand" href="#"><img src="images/mru logo.jpg"></a>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#about-location">ABOUT</a></li>
-        <li><a href="#team-location">TEAM</a></li>
-        <!-- <li><a href="">RESOURCES</a></li>
-        <li><a href="">ALUMNI</a></li> -->
-      </ul>
-    </nav>
+    <div class="navbar">
+      <img src="images/mru logo.jpg" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about-location">ABOUT</a></li>
+          <li><a href="#team-location">TEAM</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
 
 
     <div class="header">
@@ -179,6 +180,63 @@
   <div class="footer">
     <h6 id="footer-text"> CODING CLUB MRU - All Rights Reserved</h6>
   </div>
+
+  <script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
 </body>
 
-</html>
+</html> 
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="images/mru logo.jpg" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about-location">ABOUT</a></li>
+          <li><a href="#team-location">TEAM</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <div class="row">
+      <img id="club_logo" src="images/logo.jpg">
+      <h3 id="ccmru-title">CODING CLUB</h3>
+      <p id="tagline">TECHNOLOGY || INNOVATION || PASSION</p>
+    </div>
+  </div>
+  <script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html> -->
