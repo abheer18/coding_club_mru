@@ -200,7 +200,11 @@ margin-top: 150px;
 
 .card {
   margin: 15px;
-  
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
 }
 
 .card-img-top {
@@ -296,6 +300,8 @@ margin-top: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
   }
 
   .header-content h3 {
@@ -307,6 +313,8 @@ margin-top: 150px;
     font-family: "Trebuchet MS";
     color: white;
     text-align: center;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
     
   }
   .header-content p {
@@ -314,6 +322,8 @@ margin-top: 150px;
     letter-spacing: 0.5px;
     font-size: 1rem;
     color: white;
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
   }
  
   .about {
@@ -325,6 +335,7 @@ margin-top: 150px;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    overflow-x:hidden;
     
   }
 
