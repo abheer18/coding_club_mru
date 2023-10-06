@@ -130,9 +130,11 @@ nav ul li a:hover {
   font-family: Cambria;
 }
 
+
 .about-content {
   width: 50%;
 }
+  
 
 /* .about-img {
   width: 50%;
@@ -153,7 +155,9 @@ nav ul li a:hover {
   font-weight: 200;
   border-radius: 25px;
   color: white;
+  
 }
+
 
 .team {
   width: 100%;
@@ -271,6 +275,12 @@ nav ul li a:hover {
 .footer img {
   width: 30px;
   height: 30px;
+ 
+}
+.footer img:hover {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
 }
 
 #footer-text {
@@ -280,6 +290,10 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+
+  body{
+    overflow: hidden
+  }
   .bg-img {
     width: 100%;
     min-height: 100vh;
