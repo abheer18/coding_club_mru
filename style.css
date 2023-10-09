@@ -360,9 +360,10 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    display:inline-block;
+    display:flex;
     margin-top: 10px;
     margin-bottom: 10px;
+    flex-direction: column;
   }
 
   nav ul li a {
